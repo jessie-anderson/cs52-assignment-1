@@ -1,0 +1,22 @@
+body {
+  font-family: 'Hind Guntur', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.top-level {
+  background-image: url(background.jpg);
+}
+
+.flex-container {
+  display: flex;
+}
