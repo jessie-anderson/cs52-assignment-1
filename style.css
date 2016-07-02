@@ -12,11 +12,68 @@ ul {
 
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  text-align: center;
+}
+
+.flex-item {
+  order: <integer>;
+  margin:auto;
+}
 
 .top-level {
   background-image: url(background.jpg);
+  background-size: cover;
 }
 
 .flex-container {
   display: flex;
+  justify-content: space-around;
+}
+
+.flex-item {
+  order: <integer>;
+  flex-grow: 1;
+}
+
+#nav {
+  float: right;
+  padding: 10px;
+}
+
+#nav:hover {
+  border-color: white;
+  border-width: thin;
+}
+
+#links {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#email-box {
+  flex-direction: column;
+  padding: 20px;
+  opacity: 0.5;
+  border-radius: 10px;
+  background-color: black;
+  width: 33%;
+  margin-left: 33%;
+}
+
+#greeting {
+  margin-top: 100px;
+}
+
+#vertical {
+  flex-direction: column;
+}
+
+#horizontal {
+  flex-direction: row;
 }
