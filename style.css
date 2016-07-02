@@ -21,6 +21,10 @@ li {
   text-align: center;
 }
 
+nav {
+  padding: 20px;
+}
+
 .flex-item {
   order: <integer>;
   margin:auto;
@@ -43,12 +47,19 @@ li {
 
 #nav {
   float: right;
-  padding: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 
 #nav:hover {
   border-color: white;
   border-width: thin;
+  border-style: solid;
+}
+
+#bottom-bar {
+  flex-direction: row;
+  padding: 20px;
 }
 
 #links {
