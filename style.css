@@ -17,12 +17,10 @@ a {
   color: white;
 }
 
-li {
-  text-align: center;
-}
 
 nav {
-  padding: 20px;
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
 }
 
 .flex-item {
@@ -43,6 +41,7 @@ nav {
 .flex-item {
   order: <integer>;
   flex-grow: 1;
+  text-align: center;
 }
 
 #nav {
@@ -55,30 +54,43 @@ nav {
   border-color: white;
   border-width: thin;
   border-style: solid;
+  border-radius: 3px;
 }
 
 #bottom-bar {
   flex-direction: row;
-  padding: 20px;
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+
+#email-input {
+
 }
 
 #links {
   flex-direction: row;
-  justify-content: space-around;
+  margin: 50px;
 }
 
 #email-box {
   flex-direction: column;
   padding: 20px;
-  opacity: 0.5;
   border-radius: 10px;
-  background-color: black;
+  background: rgba(0,0,0,0.5);
   width: 33%;
   margin-left: 33%;
 }
 
+#left-align {
+  text-align: left;
+}
+
 #greeting {
   margin-top: 100px;
+  margin-bottom: 50px;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 25%;
 }
 
 #vertical {
