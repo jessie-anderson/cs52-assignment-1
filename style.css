@@ -28,6 +28,14 @@ input {
   border-style: none;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #link-list {
+  display:inline-block;
+}
+
 button {
   padding: 10px;
   border-radius: 5px;
@@ -63,6 +71,8 @@ nav {
 
 .heading {
   text-transform: uppercase;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 .heading:hover {
@@ -75,6 +85,10 @@ nav {
 
 .link:hover {
   text-decoration: underline;
+}
+
+#left-align {
+  text-align: left;
 }
 
 #nav {
@@ -142,6 +156,13 @@ nav {
   font-size: 1.5em;
 }
 
+#link-list-mobile {
+  display: none;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+
 #name {
   text-align: left;
   font-size: 1.5em;
@@ -173,12 +194,12 @@ nav {
     display:none;
   }
 
-  .link {
+  #link-list {
     display:none;
   }
 
-  .link:hover {
-    display:none;
+  #link-list-mobile {
+    display: inline-block;
   }
 
   #link-container {
@@ -203,6 +224,5 @@ nav {
   h2 {
     display:none;
   }
-
-
+  
 }
