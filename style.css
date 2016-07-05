@@ -27,9 +27,11 @@ input[type=text] {
   border-radius: 5px;
   border-style: none;
   margin: 5px;
+  text-align: left;
 }
 
-/* checkbox hack to expand link lists */
+/* checkbox hack to expand link lists; guidance taken from
+https://css-tricks.com/the-checkbox-hack/#article-header-id-3*/
 input[type=checkbox] {
   display: none;
 }
@@ -108,6 +110,8 @@ nav {
   border-radius: 3px;
 }
 
+/* max-height transition hack from
+http://css3.bradshawenterprises.com/animating_height/ */
 #links-mobile {
   max-height: 0;
   transition: max-height 2s ease-out;
@@ -152,13 +156,16 @@ nav {
 }
 
 #email-box {
-  flex-direction: row;
-  flex-flow: row wrap;
+  text-align: center;
   padding: 20px;
   border-radius: 10px;
   background: rgba(0,0,0,0.5);
   width: 33%;
   margin: auto;
+}
+
+#input-button {
+  flex-direction: row;
 }
 
 #link-list {
@@ -201,7 +208,7 @@ nav {
   }
 
   input[type=text] {
-    width: 100%;
+    width: 97%;
   }
 
   #nav {
@@ -229,14 +236,18 @@ nav {
   }
 
   #email-box {
-    flex-direction: column;
-    flex-flow: column nowrap;
+
     padding-left: 0px;
     padding-right: 0px;
     padding-top: auto;
     padding-bottom: auto;
-    align-items: center;
+
     width: 100%;
+  }
+
+  #input-button {
+    align-items: center;
+    flex-direction: column;
   }
 
   h2 {
